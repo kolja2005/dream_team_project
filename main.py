@@ -5,4 +5,8 @@ b = 200
 def summ (a, b):
     return a + b
 
-print(summ(a,b))
+
+
+def diff (a,b):
+    return a - b
+
