@@ -10,3 +10,6 @@ def summ (a, b):
 def diff (a,b):
     return a - b
 
+
+def xx(x):
+    return x*x
