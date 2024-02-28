@@ -8,7 +8,7 @@ def summ (a, b):
 
 
 def diff (a,b):
-    return a - b
+    return a - b*2
 
 
 def xx(x):
