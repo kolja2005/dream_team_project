@@ -1,15 +1,10 @@
-a = 100
-b = 200
+from flask import Flask, render_template
 
+app = Flask(__name__)
 
-def summ (a, b):
-    return a + b
+@app.route('/')
+def hello():
+    return render_template("index.html")
 
-
-
-def diff (a,b):
-    return a - b*2
-
-
-def xx(x):
-    return x*x
+if __name__ == '__main__':
+    app.run(debug=True)
