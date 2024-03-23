@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: #87CEEB;
+      color: white;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+      border-radius: 10px;
+    }
+    input {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #3399FF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<form action="registration_process.php" method="post">
+  <h2>Registration</h2>
+  <input type="text" name="username" placeholder="Username" required>
+  <input type="password" name="password" placeholder="Password" required>
+  <input type="submit" value="Register">
+</form>
+</body>
+</html>
