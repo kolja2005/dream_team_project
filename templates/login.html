@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" href="{{url_for('static', filename='auth.css')}}">-->
+    <link rel="stylesheet" href="../static/auth.css">
+    <script defer>
+        send_btn = document.querySelector(".send-btn")
+        
 
+    </script>
+    <title>Вход</title>
+</head>
+
+<body>
+    <form action="registration_process.php" method="post">
+        <h2>Авторизация</h2>
+        <input type="text" id="login" name="login" placeholder="Login" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button class="send_btn" onclick="return false">Войти</button>
+    </form>
 </body>
-</html>
