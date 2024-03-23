@@ -1,15 +1,4 @@
-<!doctype html>
-<html lang="ru">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
-
-    <style>
-        html, body {
+ html, body {
             padding: 0;
             margin: 0;
         }
@@ -106,45 +95,3 @@
         }
 
 
-
-    </style>
-</head>
-<body>
-   <div class="main_container">
-       <div class="header">
-           <div class="h_container">
-               <ul>
-                   <li>
-                       <a href="" class="navigate_btn" data-active="true">
-                           Главная
-                       </a>
-                   </li>
-                   <li>
-                       <a href="" class="navigate_btn" data-active="false">
-                           Настройки
-                       </a>
-                   </li>
-                   <li>
-                       <div class="btn_user">
-                           <!--                        <img src="" alt="">-->
-                           <div style="border-radius: 100%; width: 40px; height: 40px; background-color: #ababab; margin-right: 7px; display: flex; justify-content: center; align-items: center">
-                               ИФ
-                           </div>
-                           <div class="user_label">Имя Фамилия</div>
-                       </div>
-                   </li>
-
-               </ul>
-           </div>
-       </div>
-       <div class="body">
-            <div class="b_container">
-
-            </div>
-       </div>
-<!--       <div class="footer">-->
-
-<!--       </div>-->
-   </div>
-</body>
-</html>
