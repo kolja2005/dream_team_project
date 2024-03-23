@@ -80,8 +80,8 @@ a {
     overflow-x: hidden;
     overflow-y: auto;
     .b_container {
-        /*background-color: chartreuse;*/
-        height: 550px;
+        background-color: #fff;
+        height: 1020px;
 
     }
 }
