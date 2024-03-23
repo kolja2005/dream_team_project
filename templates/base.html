@@ -6,6 +6,46 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
-    {% block body %}{% endblock %}
+    <div class="main_container">
+
+        <div class="header">
+            <div class="h_container">
+               <ul>
+
+                   <li>
+                       <a href="/" class="navigate_btn" data-active="{{is_active[0]}}">
+                           Главная
+                       </a>
+                   </li>
+                   <li>
+                       <a href="/courses" class="navigate_btn" data-active="{{is_active[1]}}">
+                           Курсы
+                       </a>
+                   </li>
+                   <li>
+                       <a href="/settings" class="navigate_btn" data-active="{{is_active[2]}}">
+                           Настройки
+                       </a>
+                   </li>
+                   <li>
+                       <div class="btn_user" onclick="document.querySelector('.dropdown_usermenu').classList.toggle('opened')">
+                           <!--                        <img src="" alt="">-->
+                           <div style="border-radius: 100%; width: 40px; height: 40px; background-color: #ababab; margin-right: 7px; display: flex; justify-content: center; align-items: center">
+                               ИФ
+                           </div>
+                           <div class="user_label">Имя Фамилия</div>
+
+                       </div>
+                   </li>
+
+               </ul>
+                <div class="dropdown_usermenu">
+                </div>
+           </div>
+
+       </div>
+{% block body %}{% endblock %}
+    </div>
+
 </body>
 </html>
