@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    <link rel="stylesheet" href="{{url_for('static', filename='auth.css')}}">-->
     <link rel="stylesheet" href="../static/auth.css">
-    <script defer>
-        send_btn = document.querySelector(".send-btn")
-
-
-    </script>
     <title>Регистрация</title>
 </head>
 
 <body>
-<form method="post">
+<div class="form">
     <h2>Регистрация</h2>
     <input type="text" id="f_name" name="f_name" placeholder="Name" required>
     <input type="text" id="l_name" name="l_name" placeholder="Surname" required>
+    <input type="text" id="m_name" name="m_name" placeholder="Patronymic">
+    <input type="text" id="login" name="login" placeholder="Login" required>
     <input type="password" id="password" name="password" placeholder="Password" required>
     <input type="password" id="password2" name="password2" placeholder="Retype password" required>
-    <button class="send_btn" onclick="return false">Зарегистрироваться</button>
-</form>
+    <button class="send_btn" style="font-size: 16px;">Зарегистрироваться</button>
+    <div style="width: 100%; margin-top: 5px;display: flex; justify-content: center;">Есть аккаунт? <a href="/login">Войти</a></div>
+</div>
+<div class="error_block" id="error_block">
+    <div class="error_message"></div>
+    <div class="close_btn" onclick="error_block.classList.remove('opened')">×</div>
+</div>
+<script src="../static/registration.js">
+
+</script>
 </body>

@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--    <link rel="stylesheet" href="{{url_for('static', filename='auth.css')}}">-->
     <link rel="stylesheet" href="../static/auth.css">
-    <script defer>
-        send_btn = document.querySelector(".send-btn")
-        
-
-    </script>
     <title>Вход</title>
 </head>
 
 <body>
-    <form action="registration_process.php" method="post">
+    <div class="form">
         <h2>Авторизация</h2>
         <input type="text" id="login" name="login" placeholder="Login" required>
         <input type="password" id="password" name="password" placeholder="Password" required>
-        <button class="send_btn" onclick="return false">Войти</button>
-    </form>
+        <button class="send_btn">Войти</button>
+        <div style="width: 100%; margin-top: 5px;display: flex; justify-content: center;">Нет аккаунта? <a href="/registration">Зарегистрироваться</a></div>
+    </div>
+    <div class="error_block" id="error_block">
+        <div class="error_message"></div>
+        <div class="close_btn" onclick="error_block.classList.remove('opened')">×</div>
+    </div>
+    <script src="../static/login.js">
+
+</script>
 </body>
